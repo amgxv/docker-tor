@@ -10,7 +10,7 @@ The torrc file included in this repository, has the main config to run a middle 
 
 ## Build
 ```
-docker-build -t <maintainer>/<image>:<tag> -f dockerfile .
+docker build -t <maintainer>/<image>:<tag> -f dockerfile .
 ```
 
 
