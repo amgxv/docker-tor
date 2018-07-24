@@ -1,0 +1,17 @@
+##https://www.torproject.org/docs/tor-manual.html.en
+Nickname HOST
+ContactInfo MAIL
+ORPort 9001
+DirPort 9030
+ControlPort 9051
+#RelayBandwidthRate BANDWIDTHRATE
+#RelayBandwidthBurst BANDWIDTHBURST
+SocksPort 0
+SocksPolicy reject *
+ExitPolicy reject *:*
+DisableDebuggerAttachment 0
+Log notice file /var/log/tor/notices.log
+DataDirectory /var/lib/tor 
+HashedControlPassword (RUN ON LINUX tor --hashed-password PASSWORD)
+MaxMemInQueues 512MB
+
