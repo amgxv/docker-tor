@@ -1,4 +1,5 @@
-FROM ubuntu:18.04
+ARG ARCH=amd64
+FROM ${ARCH}/ubuntu:18.04
 MAINTAINER amgxv
 
 RUN apt-get update && apt-get install tor python3-pip -y
