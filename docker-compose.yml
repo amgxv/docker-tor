@@ -4,7 +4,7 @@ services:
       image: amgxv/dockerized-tor-relay:armv7
       container_name: NAME
       volumes:
-        - tor_data:/var/lib/tor
+        - tor_data:/var/lib/tor/
         - tor_logs:/var/log/tor/
         - ./torrc:/etc/tor/torrc
       ports:
