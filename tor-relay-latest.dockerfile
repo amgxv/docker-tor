@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install software-properties-common gnupg2 apt-tran
 gpg2 --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 && \
 gpg2 --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add - && \
 add-apt-repository 'deb https://deb.torproject.org/torproject.org bionic main' && \ 
-apt-get update && apt-get install tor python3-pip python3 -y && \
+apt-get update && apt-get install tor python3-pip python3 python3-distutils -y && \
 pip3 install nyx && \
 apt remove software-properties-common python3-pip -y && apt autoclean -y && apt autoremove -y && \
 rm -r /var/lib/apt/*
