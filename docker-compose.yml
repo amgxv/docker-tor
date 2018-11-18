@@ -1,7 +1,7 @@
 version : '2'
 services:
     tor-relay:
-      image: amgxv/dockerized-tor-relay:armv7
+      image: amgxv/dockerized-tor-relay:armv7-stable
       container_name: NAME
       volumes:
         - tor_data:/var/lib/tor/
