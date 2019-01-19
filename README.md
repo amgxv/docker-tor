@@ -1,9 +1,7 @@
-# dockerized-tor-relay
+# docker-tor
 ---
 
-![Docker-badge](http://dockeri.co/image/amgxv/dockerized-tor-relay)
-
-Run a Containerized Tor Relay.  
+Containerized Tor.  
 This container only includes the software to make it work.
 You should give the configuration via docker / docker-compose and torrc file.
 
