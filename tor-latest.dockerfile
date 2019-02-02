@@ -3,7 +3,7 @@ FROM ${ARCH}/ubuntu:18.04
 LABEL maintainer="amgxv"
 
 RUN apt-get update && apt-get install software-properties-common gnupg2 apt-transport-https -y && \
-gpg2 --recv-key A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 && \
+gpg2 --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 && \
 gpg2 --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add - && \
 add-apt-repository 'deb https://deb.torproject.org/torproject.org bionic main' && \ 
 apt-get update && apt-get install tor python3-pip python3 python3-distutils -y && \
