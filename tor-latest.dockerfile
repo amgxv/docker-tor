@@ -9,7 +9,7 @@ curl https://deb.torproject.org/torproject.org/pool/main/d/deb.torproject.org-ke
 dpkg -i dab.deb && \
 add-apt-repository 'deb https://deb.torproject.org/torproject.org bionic main' && \
 apt-get update && \
-apt-get install tor python3-pip python3 python3-distutils -y && \
+apt-get install tor python3-pip python3 python3-distutils python3-pkg-resources -y && \
 pip3 --no-cache-dir install nyx && \
 apt-get remove software-properties-common python3-pip curl gnupg2 apt-transport-https -y && \
 apt-get autoclean -y && \
