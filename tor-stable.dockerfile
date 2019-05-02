@@ -1,5 +1,5 @@
 ARG ARCH=amd64
-FROM ${ARCH}/debian:9.6-slim
+FROM ${ARCH}/debian:9.8-slim
 MAINTAINER amgxv
 
 RUN apt-get update && apt-get install tor tor-arm procps -y && \
