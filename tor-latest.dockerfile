@@ -1,5 +1,5 @@
 ARG ARCH=amd64
-FROM ${ARCH}/ubuntu:18.04
+FROM ${ARCH}/debian:buster
 LABEL maintainer="amgxv"
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -15,7 +15,8 @@ apt-get remove software-properties-common python3-pip curl gnupg2 apt-transport-
 apt-get autoclean -y && \
 apt-get autoremove -y && \
 rm -r /var/lib/apt/* && \
-rm dab.deb
+rm dab.deb && \
+echo "SocksPort 0.0.0.0:9050" >> /etc/tor/torrc
 USER debian-tor
 
 CMD /usr/bin/tor -f /etc/tor/torrc
