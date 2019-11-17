@@ -1,5 +1,5 @@
 ARG ARCH=amd64
-FROM ${ARCH}/debian:buster
+FROM ${ARCH}/ubuntu:latest
 LABEL maintainer="amgxv"
 
 ARG DEBIAN_FRONTEND=noninteractive
