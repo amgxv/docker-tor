@@ -1,5 +1,5 @@
 ARG ARCH=amd64
-FROM ${ARCH}/ubuntu:latest
+FROM ${ARCH}/ubuntu:bionic
 LABEL maintainer="amgxv"
 
 ARG DEBIAN_FRONTEND=noninteractive
