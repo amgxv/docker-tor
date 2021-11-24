@@ -5,7 +5,7 @@ LABEL maintainer="amgxv"
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
 apt-get install software-properties-common gnupg2 apt-transport-https curl -y && \
-curl https://deb.torproject.org/torproject.org/pool/main/d/deb.torproject.org-keyring/deb.torproject.org-keyring_2018.08.06_all.deb -o dab.deb && \
+curl https://deb.torproject.org/torproject.org/pool/main/d/deb.torproject.org-keyring/deb.torproject.org-keyring_2020.11.18_all.deb -o dab.deb && \
 dpkg -i dab.deb && \
 add-apt-repository 'deb https://deb.torproject.org/torproject.org bionic main' && \
 apt-get update && \
