@@ -1,5 +1,5 @@
 ARG ARCH=amd64
-FROM ${ARCH}/debian:10-slim
+FROM ${ARCH}/debian:stable-slim
 MAINTAINER amgxv
 
 RUN apt-get update && apt-get install tor nyx procps -y && \
