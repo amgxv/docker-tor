@@ -57,6 +57,7 @@ jobs:
         push: true
         tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ matrix.arch }}-${{ matrix.flavour }}
         labels: ${{ steps.meta.outputs.labels }}
+        build-args: "ARCH=${{ matrix.arch }}"
 
   docker-manifest:
     runs-on: ubuntu-latest
