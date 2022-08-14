@@ -1,6 +1,6 @@
 ARG ARCH=amd64
 FROM ${ARCH}/debian:oldstable-slim
-MAINTAINER amgxv
+LABEL maintainer="amgxv"
 
 RUN apt-get update && apt-get install tor tor-arm procps -y && \
 apt autoclean -y && apt autoremove -y && \
